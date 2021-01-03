@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/YiXingGunDong.css"/>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/YiXingGunDong.js"></script>
+	</head>
+	<body>
+		<div class="carousel">
+			<div class="carousel_img">
+				<ul>
+					<li>
+						<img src="img/1.jpg"/>
+						<div class="mask"></div>
+					</li>
+					<li>
+						<img src="img/4.jpg"/>
+						<div class="mask"></div>
+					</li>
+					<li>
+						<img src="img/3.jpg"/>
+						<div class="mask"></div>
+					</li>
+					<li>
+						<img src="img/2.jpg"/>
+						<div class="mask"></div>
+					</li>
+					<li>
+						<img src="img/1.jpg"/>
+						<div class="mask"></div>
+					</li>
+					<li>
+						<img src="img/2.jpg"/>
+						<div class="mask"></div>
+					</li>
+					<li>
+						<img src="img/1.jpg"/>
+						<div class="mask"></div>
+					</li>
+					<li>
+						<img src="img/3.jpg"/>
+						<div class="mask"></div>
+					</li>
+					<li>
+						<img src="img/4.jpg"/>
+						<div class="mask"></div>
+					</li>
+					<li>
+						<img src="img/2.jpg"/>
+						<div class="mask"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="carousel_btn">
+				<a href="javascript:;" class="right_btn"></a>
+				<a href="javascript:;" class="left_btn"></a>
+			</div>
+			<div class="circles">
+				<ol>
+					<li class="cur"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+		</div>
+	</body>
+	<script>
+
+		var timer;
+		//创建一个函数，用来开启自动切换图片
+		function autoChange(){
+			
+			//开启一个定时器，用来定时去切换图片
+			timer = setInterval(function(){
+				$(".right_btn").trigger("click");
+				//执行动画，切换图片
+			},3000);
+		}
+		autoChange()
+		
+	</script>
+</html>
